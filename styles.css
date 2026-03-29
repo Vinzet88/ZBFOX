@@ -51,10 +51,24 @@ a {
   padding: 0.85rem 0;
 }
 
+
 .brand {
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.brand-logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line);
+  padding: 0.2rem;
 }
 
 nav {
