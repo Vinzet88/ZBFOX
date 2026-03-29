@@ -58,8 +58,11 @@ body::before {
       transparent 0 72px,
       rgba(135, 169, 204, 0.035) 72px 73px,
       transparent 73px 146px
-    );
-  opacity: 0.42;
+    ),
+    url("assets/cyber-circuit-bg.svg");
+  background-size: auto, auto, auto, cover;
+  background-position: center;
+  opacity: 0.3;
 }
 
 body::after {
