@@ -132,6 +132,37 @@ nav a:hover {
   color: var(--text);
 }
 
+
+.social-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.social-links a {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-soft);
+  background: rgba(10, 17, 27, 0.6);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 160ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-1px);
+  border-color: rgba(124, 195, 248, 0.5);
+  background: rgba(116, 191, 248, 0.12);
+}
+
+.social-links img {
+  width: 1rem;
+  height: 1rem;
+  display: block;
+}
+
 .hero {
   padding: 5.2rem 0 4rem;
   border-bottom: 1px solid var(--line-soft);
