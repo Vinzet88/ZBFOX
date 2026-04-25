@@ -477,3 +477,116 @@ footer {
 .package-page .narrow {
   max-width: 900px;
 }
+
+.policy-card {
+  padding: 1.35rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.policy-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.8rem;
+}
+
+.policy-table th,
+.policy-table td {
+  border: 1px solid var(--line-soft);
+  padding: 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.policy-table th {
+  background: rgba(116, 191, 248, 0.08);
+}
+
+.cookie-banner {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: min(560px, calc(100vw - 2rem));
+  z-index: 60;
+  border-radius: 14px;
+  border: 1px solid rgba(116, 191, 248, 0.45);
+  background: linear-gradient(180deg, rgba(12, 19, 30, 0.98), rgba(8, 14, 22, 0.98));
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+.cookie-banner h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.45rem;
+}
+
+.cookie-banner__eyebrow {
+  color: var(--primary);
+  font-size: 0.75rem;
+  letter-spacing: 0.07em;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.cookie-banner__actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+}
+
+.cookie-banner__note {
+  margin-top: 0.65rem;
+  margin-bottom: 0;
+}
+
+.cookie-banner__note a {
+  color: #b6dcff;
+}
+
+.cookie-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 7, 12, 0.66);
+  z-index: 70;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.cookie-modal__panel {
+  width: min(680px, 100%);
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+  background: linear-gradient(180deg, #0f1722, #0a111b);
+  padding: 1.2rem;
+}
+
+.cookie-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.9rem;
+  border: 1px solid var(--line-soft);
+  border-radius: 9px;
+  padding: 0.7rem;
+  margin-top: 0.7rem;
+}
+
+.cookie-toggle small {
+  display: block;
+  color: var(--muted);
+}
+
+.cookie-toggle input {
+  margin-top: 0.25rem;
+}
+
+.cookie-modal__actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
