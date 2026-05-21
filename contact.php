@@ -22,6 +22,7 @@ if ($name === '' || $email === false || $message === '') {
 }
 
 $to = 'info@zbfox.it';
+$from = 'ai@zbfox.it';
 $subject = 'Richiesta contatto da sito ZBFOX';
 $body = "Nuova richiesta dal sito ZBFOX\n\n"
     . "Nome: {$name}\n"
@@ -29,12 +30,12 @@ $body = "Nuova richiesta dal sito ZBFOX\n\n"
     . "Messaggio:\n{$message}\n";
 
 $headers = [
-    'From: ZBFOX Website <no-reply@' . ($_SERVER['HTTP_HOST'] ?? 'localhost') . '>',
+    'From: ZBFOX Website <' . $from . '>',
     'Reply-To: ' . $email,
     'Content-Type: text/plain; charset=UTF-8'
 ];
 
-@mail($to, $subject, $body, implode("\r\n", $headers));
+@mail($to, $subject, $body, implode("\r\n", $headers), '-f' . $from);
 
 header('Location: index.html#contatti');
 exit;
