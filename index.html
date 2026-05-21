@@ -31,7 +31,7 @@
             <img src="https://cdn.simpleicons.org/instagram/E9EEF6" alt="Instagram" loading="lazy" />
           </a>
           <a href="https://www.linkedin.com/company/zbfox/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn ZBFOX">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" loading="lazy" />
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95v5.66H9.33V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.28 2.38 4.28 5.48v6.26zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
           </a>
           <a href="https://www.youtube.com/@ZBFOX_OFFICIAL" target="_blank" rel="noopener noreferrer" aria-label="YouTube ZBFOX">
             <img src="https://cdn.simpleicons.org/youtube/E9EEF6" alt="YouTube" loading="lazy" />
@@ -46,7 +46,7 @@
             <img src="https://cdn.simpleicons.org/tiktok/E9EEF6" alt="TikTok" loading="lazy" />
           </a>
         </div>
-        <a class="btn btn-small" href="#primo-passo">Parti da Cyber Snapshot</a>
+        <a class="btn btn-small" href="#primo-passo">Richiedi Cyber Snapshot</a>
       </div>
     </header>
 
@@ -61,7 +61,7 @@
               esposizione digitale. ZBFOX aiuta a renderla leggibile, prioritizzata e governabile.
             </p>
             <div class="hero-cta">
-              <a class="btn" href="cyber-snapshot.html">Parti da Cyber Snapshot</a>
+              <a class="btn" href="cyber-snapshot.html">Richiedi Cyber Snapshot</a>
               <a class="btn btn-ghost" href="#soluzioni">Esplora i pacchetti</a>
             </div>
           </div>
@@ -234,14 +234,14 @@
               È il punto di ingresso più utile per ottenere una vista iniziale dell’esposizione,
               chiarire le priorità e decidere con metodo il passo successivo.
             </p>
-            <p class="contact-note">Chiaro per chi decide. Utile per chi opera.</p>
+            <p class="contact-note">Chiaro per chi decide. Utile per chi opera. Risposta iniziale entro 24 ore lavorative.</p>
           </div>
 
           <div class="card contact-card">
             <h3>Avvia il percorso</h3>
             <p>Inizia dalla pagina dedicata o richiedi un confronto sul tuo contesto.</p>
-            <a class="btn" href="cyber-snapshot.html">Parti da Cyber Snapshot</a>
-            <a class="btn btn-ghost" href="mailto:info@zbfox.it">Richiedi un confronto</a>
+            <a class="btn" href="cyber-snapshot.html">Richiedi Cyber Snapshot</a>
+            <a class="btn btn-ghost" href="mailto:info@zbfox.it?subject=Richiesta%20confronto%20ZBFOX">Richiedi un confronto</a>
             <a class="btn btn-ghost" href="#proof">Guarda gli output del percorso</a>
           </div>
         </div>
@@ -255,7 +255,20 @@
             Se vuoi un confronto preliminare su esposizione, priorità e percorso più adatto,
             contattaci con una breve descrizione della tua situazione.
           </p>
-          <a class="btn" href="mailto:info@zbfox.it">Contatta ZBFOX</a>
+          <a class="btn" href="mailto:info@zbfox.it?subject=Richiesta%20confronto%20ZBFOX">Contatta ZBFOX</a>
+
+          <form class="contact-form" action="mailto:info@zbfox.it" method="post" enctype="text/plain">
+            <label for="nome">Nome</label>
+            <input id="nome" name="Nome" type="text" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="Email" type="email" required />
+
+            <label for="messaggio">Messaggio</label>
+            <textarea id="messaggio" name="Messaggio" rows="5" required placeholder="Descrivi brevemente il tuo contesto"></textarea>
+
+            <button class="btn" type="submit">Invia richiesta</button>
+          </form>
         </div>
       </section>
     </main>
