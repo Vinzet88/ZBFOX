@@ -617,3 +617,11 @@ footer {
 .contact-form textarea {
   resize: vertical;
 }
+
+
+.social-icon {
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  fill: #E9EEF6;
+}
